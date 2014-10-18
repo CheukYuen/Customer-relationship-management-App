@@ -5,10 +5,23 @@ angular.module('myApp', [
     'ngRoute',
     'myApp.view1',
     'myApp.view2',
-    'myApp.dashboard',
-    'myApp.customers',
-    'myApp.version'
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/view1'});
     }]);
+
+//var myApp = angular.module('myApp', [
+//    'ngRoute',
+//    'artistControllers'
+//]);
+//
+//myApp.config(['$routeProvider', function ($routeProvider) {
+//    $routeProvider.
+//        when('/list', {
+//            templateUrl: 'Dashboard/default.html',
+//            controller: 'ListController'
+//        }).
+//        otherwise({
+//            redirectTo: '/list'
+//        });
+//}]);

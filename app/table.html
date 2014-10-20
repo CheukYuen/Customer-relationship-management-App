@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-touch.js"></script>-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.js"></script>-->
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+
+
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="css/table.css" type="text/css">
+    <script src="table.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainCtrl">
+    <div id="grid1" ui-grid="{ data: myData }" class="grid"></div>
+</div>
+
+
+
+</body>
+</html>

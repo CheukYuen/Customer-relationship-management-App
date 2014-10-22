@@ -1,6 +1,6 @@
-var app = angular.module('myApp', ['ui.grid']);
+var dataTable = angular.module('dataTableControllers', ['ui.grid']);
 
-app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+dataTable.controller('dataTableControllers', ['$scope', '$http', function ($scope, $http) {
     $scope.gridOptions = {  };
 
     $scope.gridOptions.columnDefs = [
@@ -12,7 +12,7 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
         {name: 'address.state'}
     ];
 
-    $http.get('https://rawgit.com/angular-ui/ui-grid.info/gh-pages/data/10000_complex.json')
+    $http.get('js/test.json')
         .success(function(data) {
             $scope.gridOptions.data = data;
         });

@@ -1,14 +1,21 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var myApp = angular.module('myApp', [
     'ngRoute',
+    'dataTableControllers',
     'myApp.view1',
-    'myApp.view2',
-]).
-    config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/view1'});
-    }]);
+    'myApp.view2'
+]);
+
+
+myApp.config(['$routeProvider', function ($routeProvider) {
+    $routeProvider.
+        when('/list', {
+        templateUrl: 'partials/data-table.html',
+        controller: 'dataTableControllers'
+    }).otherwise({redirectTo: '/list'});
+}]);
 
 //var myApp = angular.module('myApp', [
 //    'ngRoute',

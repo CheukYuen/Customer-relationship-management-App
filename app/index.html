@@ -49,248 +49,101 @@
 
 <div id="wrapper">
 
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Leon CRM v0.1</a>
-    </div>
-    <!-- /.navbar-header -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Leon CRM v0.1</a>
+        </div>
+        <!-- /.navbar-header -->
 
-    <ul class="nav navbar-top-links navbar-right">
-        <!-- /.dropdown -->
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-user">
-                <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                </li>
-                <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                </li>
-            </ul>
-            <!-- /.dropdown-user -->
-        </li>
-        <!-- /.dropdown -->
-    </ul>
-    <!-- /.navbar-top-links -->
+        <ul class="nav navbar-top-links navbar-right">
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
 
-    <div class="navbar-default sidebar" role="navigation">
-        <div class="sidebar-nav navbar-collapse">
-            <ul class="nav" id="side-menu">
-                <li class="sidebar-search">
-                    <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" placeholder="Search customer...">
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search customer...">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>
-                    </div>
-                    <!-- /input-group -->
-                </li>
-                <li>
-                    <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                </li>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="#/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
 
-                <li>
-                    <a href="forms.html"><i class="fa fa-user fa-fw"></i> Contacts</a>
-                </li>
-                <li>
-                    <a href="orders_A.html"><i class="fa fa-table fa-fw"></i> Orders</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="flot.html">Flot Charts</a>
-                        </li>
-                        <li>
-                            <a href="morris.html">Morris.js Charts</a>
-                        </li>
-                    </ul>
-                    <!-- /.nav-second-level -->
-                </li>
-                <li>
-                    <a href="orders_A.html"><i class="fa fa-comments-o fa-fw"></i> About</a>
-                </li>
-                <li>
-                    <a href="orders_A.html"><i class="fa fa-beer fa-fw"></i> Logout</a>
-                </li>
-
-
-            </ul>
-        </div>
-        <!-- /.sidebar-collapse -->
-    </div>
-    <!-- /.navbar-static-side -->
-</nav>
-
-<!-- Page Content -->
-<div id="page-wrapper">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Headings
-                </div>
-                <div class="panel-body">
+                    <li>
+                        <a href="#/contacts"><i class="fa fa-user fa-fw"></i> Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#/orders"><i class="fa fa-table fa-fw"></i> Orders</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="flot.html">Flot Charts</a>
+                            </li>
+                            <li>
+                                <a href="morris.html">Morris.js Charts</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#/about"><i class="fa fa-comments-o fa-fw"></i> About</a>
+                    </li>
+                    <li>
+                        <a href="#/login"><i class="fa fa-beer fa-fw"></i> Login</a>
+                    </li>
 
 
-                    <!--<div ng-controller="MyController">-->
-                    <!--<table>-->
-                    <!--<tr ng-repeat="customer in customers ">-->
-                    <!--<td>{{customer.name}}</td>-->
-                    <!--<td>{{customer.company}}</td>-->
-
-                    <!--</tr>-->
-                    <!--</table>-->
-                    <!--</div>-->
-                    <table>
-                        <tr class="odd gradeX">
-                            <td>Trident</td>
-                            <td>Internet Explorer 4.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">4</td>
-                            <td class="center">X</td>
-                        </tr>
-                        <tr class="even gradeC">
-                            <td>Trident</td>
-                            <td>Internet Explorer 5.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">5</td>
-                            <td class="center">C</td>
-                        </tr>
-                        <tr class="odd gradeA">
-                            <td>Trident</td>
-                            <td>Internet Explorer 5.5</td>
-                            <td>Win 95+</td>
-                            <td class="center">5.5</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="even gradeA">
-                            <td>Trident</td>
-                            <td>Internet Explorer 6</td>
-                            <td>Win 98+</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="odd gradeA">
-                            <td>Trident</td>
-                            <td>Internet Explorer 7</td>
-                            <td>Win XP SP2+</td>
-                            <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                    </table>
-                </div>
-
-
-                <!-- /.panel-body -->
+                </ul>
             </div>
-            <!-- /.panel -->
+            <!-- /.sidebar-collapse -->
         </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Paragraphs
-                </div>
-                <div class="panel-body">
-                    <p class="lead">This is an example of lead body copy.</p>
+        <!-- /.navbar-static-side -->
+    </nav>
 
-                    <p>This is an example of standard paragraph text. This is an example of <a href="#">link anchor
-                        text</a>
-                        within body copy.</p>
-
-                    <p>
-                        <small>This is an example of small, fine print text.</small>
-                    </p>
-                    <p>
-                        <strong>This is an example of strong, bold text.</strong>
-                    </p>
-
-                    <p>
-                        <em>This is an example of emphasized, italic text.</em>
-                    </p>
-                    <br>
-                    <h4>Alignment Helpers</h4>
-
-                    <p class="text-left">Left aligned text.</p>
-
-                    <p class="text-center">Center aligned text.</p>
-
-                    <p class="text-right">Right aligned text.</p>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Emphasis Classes
-                </div>
-                <div class="panel-body">
-                    <p class="text-muted">This is an example of muted text.</p>
-
-                    <p class="text-primary">This is an example of primary text.</p>
-
-                    <p class="text-success">This is an example of success text.</p>
-
-                    <p class="text-info">This is an example of info text.</p>
-
-                    <p class="text-warning">This is an example of warning text.</p>
-
-                    <p class="text-danger">This is an example of danger text.</p>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-4 -->
-    </div>
-    <!-- /.row -->
-
+    <!-- Page Content -->
     <div ng-view>
 
+
+
     </div>
 
 
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    DataTables Advanced Tables
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body"></div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-</div>
-<!-- /#page-wrapper -->
+
+    <!-- /#page-wrapper -->
 
 </div>
 <!-- /#wrapper -->
@@ -312,10 +165,6 @@
 <!-- Metis Menu Plugin JavaScript -->
 <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-<!-- DataTables JavaScript -->
-<script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
-<!--<script src="bower_components/datatables-bootstrap3/BS3/assets/js/datatables.js"></script>-->
-<!--<script src="bower_components/angular-datatables/dist/angular-datatables.js"></script>-->
 
 <!--Angular UI Grid JavaScript-->
 <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
@@ -328,21 +177,16 @@
 <script src="js/sb-admin-2.js"></script>
 
 
-<script src="table.js"></script>
+<script src="js/table.js"></script>
 <script src="js/app.js"></script>
 <!--<script src="js/controller.js"></script>-->
 <script src="view1/view1.js"></script>
-<script src="view2/view2.js"></script>
+
 <!--<script src="Dashboard/Dashboard.js"></script>-->
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
 
-<!-- Page-Level Demo Scripts - Tables - Use for reference -->
-<script>
-    $(document).ready(function () {
-        $('#dataTables-example').dataTable();
-    });
-</script>
+
 </body>
 </html>

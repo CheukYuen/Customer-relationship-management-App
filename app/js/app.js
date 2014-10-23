@@ -4,17 +4,29 @@
 var myApp = angular.module('myApp', [
     'ngRoute',
     'dataTableControllers',
-    'myApp.view1',
-    'myApp.view2'
+    'myApp.view1'
+
 ]);
 
 
 myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
-        when('/list', {
-        templateUrl: 'partials/data-table.html',
-        controller: 'dataTableControllers'
-    }).otherwise({redirectTo: '/list'});
+        when('/dashboard', {
+            templateUrl: 'view/dashboard.html',
+            controller: 'dataTableControllers'
+        }).when('/contacts', {
+            templateUrl: 'view/contacts.html',
+            controller: 'dataTableControllers'
+        }).when('/orders', {
+            templateUrl: 'view/orders.html',
+            controller: 'dataTableControllers'
+        }).when('/about', {
+            templateUrl: 'view/about.html',
+            controller: 'dataTableControllers'
+        }).when('/login', {
+            templateUrl: 'view/login.html',
+            controller: 'dataTableControllers'
+        }).otherwise({redirectTo: '/dashboard'});
 }]);
 
 //var myApp = angular.module('myApp', [

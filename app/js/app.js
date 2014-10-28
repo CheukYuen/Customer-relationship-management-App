@@ -17,8 +17,8 @@ myApp.config(['$routeProvider', function ($routeProvider) {
         }).when('/contacts', {
             templateUrl: 'view/contacts.html',
             controller: 'dataTableControllers'
-        }).when('/orders', {
-            templateUrl: 'view/orders.html',
+        }).when('/leads', {
+            templateUrl: 'view/leads.html',
             controller: 'dataTableControllers'
         }).when('/about', {
             templateUrl: 'view/about.html',
